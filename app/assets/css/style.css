@@ -1,0 +1,191 @@
+body {
+    font-size: 10pt;
+
+    font-family: sans-serif;
+
+
+
+    margin-right:0px ;
+}
+.pull-right {
+    float: right;
+}
+
+.container {
+    width: 910px;
+    padding: 20px;
+    padding-top: 0px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 2px #777;
+}
+div {
+    overflow: hidden;
+}
+#logo {
+    width: 110px;
+    height: 110px;
+    z-index: 9999;
+    display: block;
+    text-indent: -9999px;
+    background: url("../images/logo.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0);
+}
+.description {
+    width: 780px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #F2F2F2;
+}
+
+.thumbHolder {
+    width: 853px;
+    margin: 0 auto;
+
+}
+.description h1 {
+    margin: 0;
+}
+.description p {
+    margin: 0;
+    font-size: 10pt;
+}
+.input-wrapper {
+    width: 800px;
+    margin: 30px auto;
+}
+.input-wrapper .form-container, .input-wrapper .table-container {
+    width: 398px;
+    display: inline-block;
+
+}
+.input-wrapper .form-container .form-group {
+    width: 380px;
+}
+.input-wrapper .form-container .form-group label {
+    height: 30px;
+    width: 120px;
+    margin-top: 5px;
+    text-align: right;
+    padding-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+.input-wrapper .form-container .form-group .control {
+    width: 245px;
+    text-align: left;
+    display: inline-block;
+
+}
+.input-wrapper .form-container .form-group .control input {
+    width: 225px;
+    height: 25px;
+    padding-left: 10px;
+    border: 1px solid #aaa;
+    color: grey;
+}
+.input-wrapper .form-container .form-group .control textarea {
+    width: 225px;
+    height: 108px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid #aaa;
+    color: grey;
+}
+.input-wrapper .form-container .form-group .control.pull-right input {
+    color: #666;
+    width: 110px;
+    height: 35px;
+    font-size: 8pt;
+
+    margin-top: 10px;
+    font-weight: bold;
+    background: #EBE9EA;
+}
+.input-wrapper .table-container {
+    overflow: hidden;
+    vertical-align: top;
+}
+.input-wrapper .table-container table {
+    width: 365px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    color: grey;
+}
+
+.input-wrapper .table-container table thead tr{
+    height: 40px;
+    border: none;
+    background: #EBE9EA;
+}
+.input-wrapper .table-container table thead th {
+    text-align: left;
+    padding-left: 20px;
+}
+.input-wrapper .table-container table tbody tr{
+    height: 29px;
+    border: none;
+    /*background: none;*/
+}
+
+
+.input-wrapper .table-container table tbody tr td {
+    padding-left: 20px;
+    border-bottom: 1px solid #aaa;
+
+}
+.prev {
+    background-image: url("../../asstes/images/icons/prev.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 58px;
+    position: absolute;
+    margin-left: -12px;
+}
+.next {
+    background-image:url("../../asstes/images/icons/next.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 58px;
+}
+
+.thumb {
+    display: inline-block;
+    background-size:cover;
+    border:1px solid transparent;
+    margin:2px 15px;
+    width: 177px;
+    height: 126px;
+    padding-bottom: 2px;
+
+}
+.side_banner{
+    position: fixed;
+    right: 0px;
+    float: right;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 8pt;
+    font-wight: bold;
+    color: grey;
+    width: 30px;
+    height: 195px;
+    display: inline-block;
+    top: 220px;
+    background: #E4E4DF;
+    border:1px solid #b9b9b1;
+    border-right: none;
+}
+.is-active {
+    border-bottom: 2px solid red;
+    padding: 0px;
+}

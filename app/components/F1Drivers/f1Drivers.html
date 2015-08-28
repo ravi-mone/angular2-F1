@@ -1,0 +1,54 @@
+<!--Header component -->
+<driverHeader></driverHeader>
+<!--Header component-->
+<hr/>
+<div class="row">
+    <ul class="list-group table"   *ng-for="#driver of driverObj">
+    <li class="" >
+        <div class="col-md-12">
+            <div class="col-md-1">
+                <img src="/assets/images/{{driver.Driver.driverId}}.jpg" class="img-thumbnail" width="100" height="50" border="0"  />
+            </div>
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <div class="col-md-4"> <a [router-link]="['/details', {name : driver.position}]">{{driver.Driver.givenName}}</a></div>
+                    <div class="col-md-5">{{driver.Driver.familyName}}</div>
+                    <div class="col-md-3">
+                        <nationality cty={{driver.Driver.nationality}}></nationality>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                {{driver.Constructors[0].name}}
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <points alt={{driver.points}} ></points>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-default btn-lg" disabled>
+                            <span class="glyphicon glyphicon-user"></span> {{driver.position}}
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-default btn-lg " disabled>
+
+                            <span *ng-if="driver.wins == 0" class="glyphicon glyphicon-thumbs-down "></span>
+                            <span *ng-if="driver.wins != 0" class="glyphicon glyphicon-thumbs-up"></span>
+                            {{driver.wins}}
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{driver.Driver.url}}" target="_blank"><button type="button" class="btn btn-default btn-lg" >
+                                    <span class="glyphicon glyphicon-globe">
+                                        Wiki
+                                    </span>
+                        </button></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </li>
+</ul>
+</div>

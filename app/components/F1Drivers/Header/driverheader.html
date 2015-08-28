@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-12" style="border: 1px;">
+        <div class="col-md-1" style="text-align: right;" >
+            <b>Photo</b>
+        </div>
+        <div class="col-md-3">
+            <div class="col-md-12">
+                <div class="col-md-4" style="text-align: right;padding-right: 0px;" >
+                    <b>Name  </b>
+                </div>
+                <div class="col-md-5" style="text-align: right;padding-right: 0px;"><b>Sur Name</b></div>
+                <div class="col-md-3">
+                    <b>Nation</b>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <b>Brand </b>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <b></b>
+                    <span class="glyphicon glyphicon-filter" id="points" ng-click="makeActive('points')" style="cursor:pointer;" title="Filtering Points"></span>
+                    <a ng-click="sortBy('points')"> <b>Points  </b><!--{{sortIconFor('points')}}--></a>
+                </div>
+                <div class="col-md-3">
+                    <span class="glyphicon glyphicon-filter filteractive"  id="position" title="Filtering Points" style="cursor:pointer;" ng-click="makeActive('position')"></span>
+                    <a ng-click="sortBy('position')"> <b>Position  </b><!--{{sortIconFor('position')}}--></a>
+                </div>
+                <div class="col-md-3">
+                    <span class="glyphicon glyphicon-filter" id="wins"  title="Filtering Points" style="cursor:pointer;" ng-click="makeActive('wins')"></span>
+                    <a ng-click="sortBy('wins')"> <b>Matches  </b><!--{{sortIconFor('wins')}}--></a>
+                </div>
+                <div class="col-md-3">
+                    <b>Wiki</b>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,153 @@
+/* css for nodes */
+.button {
+        margin-left: 10px;
+	display: inline-block;
+	position: relative;
+	color: #888;
+	text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
+	text-decoration: none;
+	text-align: center;
+	padding: 4px 8px;
+        width:70px;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: helvetica, arial, sans-serif;
+	border-radius: 4px;
+	border: 1px solid #bcbcbc;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+	background-image: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
+}
+
+.button:hover {
+	color: #555;
+}
+
+.button:active,.button:active:after,.button:active:before {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* css for pointed arrow box of node */
+.button.back {
+	border-left: none;
+}
+
+.button.back:after {
+	content: '';
+	position: absolute;
+	height: 50%;
+	width: 15px;
+	border-left: 1px solid #bcbcbc;
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	left: -5px;
+	top: 1px;
+	-webkit-transform: skew(-35deg, 0);
+	-moz-transform: skew(-35deg, 0);
+	-o-transform: skew(-35deg, 0);
+	-ms-transform: skew(-35deg, 0);
+	transform: skew(-35deg, 0);
+}
+
+.button.back:before {
+	content: '';
+	position: absolute;
+	height: 48%;
+	width: 15px;
+	border-left: 1px solid #bcbcbc;
+	bottom: 1px;
+	left: -5px;
+	-webkit-transform: skew(35deg, 0);
+	-moz-transform: skew(35deg, 0);
+	-o-transform: skew(35deg, 0);
+	-ms-transform: skew(35deg, 0);
+	transform: skew(35deg, 0);
+	background-image: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	-webkit-box-shadow: -2px 1px 2px rgba(100,100,100,0.1);
+	box-shadow: -2px 1px 2px rgba(100,100,100,0.1);
+}
+
+/* css for highlighted node */
+.button.back {
+	border-left: none;
+}
+
+.button.backcolored:after {
+	content: '';
+	position: absolute;
+	height: 50%;
+	width: 15px;
+	border-left: 1px solid #bcbcbc;
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 10%,rgba(0,128,0,1) 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	background-image: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
+	left: -5px;
+	top: 1px;
+	-webkit-transform: skew(-35deg, 0);
+	-moz-transform: skew(-35deg, 0);
+	-o-transform: skew(-35deg, 0);
+	-ms-transform: skew(-35deg, 0);
+	transform: skew(-35deg, 0);
+}
+
+.button.backcolored:before {
+	content: '';
+	position: absolute;
+	height: 48%;
+	width: 15px;
+	border-left: 1px solid #bcbcbc;
+	bottom: 1px;
+	left: -5px;
+	-webkit-transform: skew(35deg, 0);
+	-moz-transform: skew(35deg, 0);
+	-o-transform: skew(35deg, 0);
+	-ms-transform: skew(35deg, 0);
+	transform: skew(35deg, 0);
+	background-image: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -moz-linear-gradient(top, rgba(0,128,0,0.8) 0%,rgba(0,128,0,0.5) 10%,rgba(0,128,0,0.2) 100%);
+	background-image: -o-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	background-image: linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
+	-webkit-box-shadow: -2px 1px 2px rgba(100,100,100,0.1);
+	box-shadow: -2px 1px 2px rgba(100,100,100,0.1);
+}
+
+ul, li { list-style: none; margin: 0; padding: 0; }
+
+/* css for straight vertical dotted line for each node */
+.odd { padding-left: 3em; border-left: 1px dotted black;}
+
+/* css for hiding first straight vertical dotted line */
+#treeDiv > tree > ul > ul {  border-left: 1px dotted white;}
+
+/* css for placing nodes far away */
+ul .even { padding-left: 3em; }
+
+/* css for displaying connecting lines to nodes */	
+tree li { padding-left: 3em; border: 1px dotted black; border-width: 0 0 1px 1px;width:100px; }
+
+li.container { border-bottom: 0px; }
+
+li.empty { font-style: italic; color: silver; border-color: silver; }
+
+li p { margin: 0; background: white; position: relative; top: 1em; }
+
+li ul { border-top: 1px dotted black; margin-left: -1em; padding-left: 2em; }
+
+/* css for hiding first li node connecting lines */
+#treeDiv > tree:first-child > ul:first-child > li:first-child { padding-left: 3em; border: 0px dotted white; border-width: 0 0 0 0;width:100px; }
+

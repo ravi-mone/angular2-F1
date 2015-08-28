@@ -1,0 +1,38 @@
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-2">
+            <div id="main">
+
+                <nav id="secondary" class="main-nav">
+                    <div class="driver-picture">
+                        <div class="avatar">
+                            <b>{{driver.Driver.givenName}} {{driver.Driver.familyName}} </b><br />
+                            <ul class="nav nav-pills">
+                                <li class="active">
+                                    <a [router-link]="['/home']">Home</a>
+                                    <a [router-link]="['/about']">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="driver-status">
+                        <img src="assets/images/{{driver.Driver.driverId.toLowerCase()}}.jpg"   border="0" class="img-polaroid">
+                        <hr />
+
+                        Country: {{driver.Driver.nationality}}
+
+                        <div class="col-md-12">
+                            <nationality cty={{driver.Driver.nationality}}></nationality>
+                        </div>
+
+                        Team: {{driver.Constructors[0].name}}<br/>
+                        Birth: {{ driver.Driver.dateOfBirth }}<br/>
+                        <a href="{{driver.Driver.url}}" target="_blank">Biography</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+</div>

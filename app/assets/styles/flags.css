@@ -1,0 +1,95 @@
+
+.Australian {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Australian.ico) no-repeat;	
+}
+.Austrian {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Austrian.ico) no-repeat
+}
+.Brazilian {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Brazilian.ico) no-repeat
+}
+.British {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/British.ico) no-repeat
+}
+.Dutch {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Dutch.ico) no-repeat
+}
+.Finnish {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Finnish.ico) no-repeat
+}
+.French {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/French.ico) no-repeat
+}
+.German {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/German.ico) no-repeat
+}
+.Indian {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Indian.ico) no-repeat
+}
+.Italian {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Italian.ico) no-repeat
+}
+.Malaysian {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Malaysian.ico) no-repeat
+}
+.Mexican {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Mexican.ico) no-repeat
+}
+.Russian {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Russian.ico) no-repeat
+}
+.Scottish {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/scotland.ico) no-repeat
+}
+.Spanish {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Spanish.ico) no-repeat
+}
+.Swiss {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Swiss.ico) no-repeat
+}
+.Venezuelan {
+    width: 16px;
+    height: 21px;
+    background:url(../images/flags/Venezuelan.ico) no-repeat
+}
+
+.flagicon{
+	background-size:100%;
+}
+
+ 
+.filteractive{
+color:green;
+}
