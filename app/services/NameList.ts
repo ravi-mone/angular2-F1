@@ -558,7 +558,4 @@ export class NamesList {
   get() {
     return this.driverNames;
   }
-  /*add(value: string) {
-    this.names.push(value);
-  }*/
 }
