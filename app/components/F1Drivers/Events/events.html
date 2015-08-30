@@ -1,0 +1,24 @@
+<section class="new-link">
+    <div class="control-group">
+        <div><label for="title">Title:</label></div>
+        <div><input name="title" #newtitle></div>
+    </div>
+    <div class="control-group">
+        <div><label for="link">Link:</label></div>
+        <div><input name="link" #newlink></div>
+    </div>
+
+    <button (click)="addArticle(newtitle, newlink)">Submit Link</button>
+</section>
+<hr  />
+<section>
+    <!--*ng-for="#article of articles | limitTo:2" -->
+    <div *ng-if="articles.length" >
+        <ul >
+            <li><b>Title</b> |  <b>Link</b></li>
+        </ul>
+        <ul *ng-for="#article of articles;  #i = index">
+            <li> {{article.title}} | {{article.link}} <button (click)="deleteArticle(i)">X</button></li>
+        </ul>
+    </div>
+</section>

@@ -1,4 +1,5 @@
 export class NamesList {
+
   driverNames = [
     {
       "season": "2013",
@@ -553,9 +554,18 @@ export class NamesList {
         }
       ]
     }
-  ]
-
+  ];
+  articleList:Array<Object>=[];
   get() {
     return this.driverNames;
+  },
+  getArticleList(index){
+    return this.articleList[index];
+  },
+  postArticle(article){
+    this.articleList.push(article);
+  },
+  deleteArticle(index){
+    this.articleList.splice(index, 1);
   }
 }
