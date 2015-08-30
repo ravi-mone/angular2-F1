@@ -1,11 +1,47 @@
+<ul class="list-group">
+<li class="list-group-item"><b>Formula 1, 2013 Drivers Position</b></li>
+<li class="list-group-item">
+    <div class="input-group">
+        <!--NOTE : reference names should be always in lowwercase only -->
+        <input name="driver" #namefilter  class="form-control" placeholder="Search...">
+        <span class="input-group-addon glyphicon glyphicon-search" (click)="filterByNames(namefilter, newtitle)" style="top:0px;cursor: pointer;" ></span>
+        <span style="margin-left: 20px;cursor: pointer;" title="Reset" class="glyphicon glyphicon-refresh" (click)="nameFilter = '';filterByNames();" ></span>
+    </div>
+</li>
+</ul>
+<hr/>
+Show:
+<ul class=" " role="menu">
+    <li><a (click)="showSelected(5);">5</a></li>
+    <li><a (click)="showSelected(10);">10</a></li>
+    <li><a (click)="showSelected(20);">20</a></li>
+    <li><a (click)="showSelected(driversList.length);">All</a></li>
+</ul>
+<button type="button" class="btn btn-primary">Showing {{(driverObj.length >= 1 && driverObj.length < driversList.length)? driverObj.length :  pageSelected }} records</button>
+
+<!--NOTE : since you are using ng-switch, ng-switch-when, ng-switch-default ,
+So import :
+import { NgSwitch, NgSwitchWhen, NgSwitchDefault} from 'angular2/angular2';
+-->
+<div [ng-switch]="pageSelected">
+       <template  class="glyphicon glyphicon-user"></template>
+       <template [ng-switch-when]="0">No drivers. :-(</template>
+       <template [ng-switch-when]="1">1 driver!</template>
+       <template ng-switch-default> {{driverObj[0].Driver.givenName}}, {{driverObj[1].Driver.givenName}} and
+            <span class="badge badge-info">{{driverObj.length - 2}}</span> other !
+       </template>
+ </div>
+<hr />
 <!--Header component -->
 <driverHeader></driverHeader>
 <!--Header component-->
 <hr/>
 <div class="row">
-    <ul class="list-group table"   *ng-for="#driver of driverObj">
+    <ul class="list-group table"   *ng-for="#driver of driverObj | limitTo:pageSelected; #i= index">
     <li class="" >
+
         <div class="col-md-12">
+            <div >{{i + 1}}</div>
             <div class="col-md-1">
                 <img src="/assets/images/{{driver.Driver.driverId}}.jpg" class="img-thumbnail" width="100" height="50" border="0"  />
             </div>
