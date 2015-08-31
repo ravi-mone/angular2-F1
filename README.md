@@ -1,6 +1,6 @@
 # Introduction
 
-This is a just for pratise I have used the Angular2 and created few views like Formula1 drivers.
+This is just for pratice I have used the Angular2 and created few views like Formula1 drivers.
 
 
 It is something similar to the AngularJS Quick Start but does the entire build with gulp.
@@ -11,7 +11,7 @@ It is something similar to the AngularJS Quick Start but does the entire build w
 
 ```bash
 git clone https://github.com/ravi-mone/angular2-F1.git
-cd angular2-F1.git
+cd angular2-F1
 npm install
 # If you don't have gulp already installed
 npm install -g gulp
