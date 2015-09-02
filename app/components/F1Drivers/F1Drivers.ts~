@@ -14,7 +14,7 @@ import {NamesList} from '../../services/NameList';
 })
 @View({
     templateUrl: './components/F1Drivers/f1Drivers.html?v=<%= VERSION %>',
-    directives:[NgFor, NgIf, NgSwitch, NgSwitchWhen, NgSwitchDefault,Points, Nationality, driverHeader, RouterLink]
+    directives:[NgFor, NgIf, NgSwitch, NgSwitchWhen, NgSwitchDefault,NgClass, Points, Nationality, driverHeader, RouterLink]
     //viewBindings: [httpInjectables]
 })
 export class F1Drivers {

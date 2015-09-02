@@ -2,8 +2,6 @@
   <nav>
     <a [router-link]="['/home']">Home</a>
     <a [router-link]="['/about']">About</a>
-    <a [router-link]="['/drivers']">F1 Drivers</a>
-    <a [router-link]="['/events']">Events example</a>
   </nav>
 
   <router-outlet></router-outlet>

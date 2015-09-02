@@ -7,8 +7,7 @@ import {Component, View, NgClass} from 'angular2/angular2';
     properties: ['text: cty'],
 })
 @View({
-    templateUrl: './components/F1Drivers/nationality/nationality.html?v=<%= VERSION %>',
-    directives :[NgClass]
+    templateUrl: './components/F1Drivers/nationality/nationality.html?v=<%= VERSION %>'
 })
 export class Nationality {
     nationality:string;
